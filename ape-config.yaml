@@ -1,0 +1,12 @@
+name: apeworx-starter-kit
+contracts_folder: contracts
+deployments:
+  ethereum:
+    sepolia:
+      - contract_type: AggregatorV3Interface
+        address: "0x694AA1769357215DE4FAC081bf1f309aDC325306"
+      - contract_type: VRFCoordinatorV2
+        address: "0x8103B0A8A00be2DDC778e6e7eaa21791Cd364625"
+      - contract_type: LinkToken
+        address: "0x779877A7B0D9E8603169DdbD7836e478b4624789"
+default_ecosystem: ethereum
