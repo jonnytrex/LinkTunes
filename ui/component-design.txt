@@ -1,0 +1,18 @@
+
+linktunes.(io?)/
+------------
+land on home page
+
+home
+----
+home landing page & splash content
+- latest releases & content feed
+- marketplace content
+- navbar
+
+navbar
+------
+global site header, contains links to main pages
+- home
+- my profile
+- marketplace
