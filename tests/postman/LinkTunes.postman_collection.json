@@ -1,0 +1,135 @@
+{
+	"info": {
+		"_postman_id": "aba4be5c-f5c4-4b28-a8a2-bdbec3e7a6f7",
+		"name": "LinkTunes",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "31131129"
+	},
+	"item": [
+		{
+			"name": "Add User",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "user",
+						"value": "",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "Steve",
+							"type": "text"
+						},
+						{
+							"key": "img_url",
+							"value": "url",
+							"type": "text"
+						},
+						{
+							"key": "loc",
+							"value": "NC",
+							"type": "text"
+						},
+						{
+							"key": "wallet_id",
+							"value": "12345",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:5000/add_user",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"add_user"
+					],
+					"query": [
+						{
+							"key": "user.name",
+							"value": "Steve",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get all users",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": []
+				},
+				"url": {
+					"raw": "localhost:5000/users",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get user by id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:5000/users/1",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"users",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Search by wallet id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:5000/search?wallet=12345",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"search"
+					],
+					"query": [
+						{
+							"key": "wallet",
+							"value": "12345"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
