@@ -1,4 +1,4 @@
-
+from scripts.helper_functions import get_account
 from flask import Flask, jsonify, render_template, request
 from flask_sqlalchemy import SQLAlchemy
 
@@ -118,6 +118,12 @@ def post_new_merch():
     db.session.add(new_merch)
     db.session.commit()
     return jsonify(response={"success": "Successfully added the new merch."})
+
+@app.route("/account", methods=["GET"])
+def get_current_account():
+    get_account(index=None, id=None)
+
+
 
 
 if __name__ == '__main__':
