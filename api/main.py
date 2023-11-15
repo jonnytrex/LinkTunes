@@ -89,8 +89,35 @@ def post_new_user():
     db.session.commit()
     return jsonify(response={"success": "Successfully added the new user."})
 
+# Create a new Artist
+# Test this inside Postman. Request type: Post ->  Body ->  x-www-form-urlencoded
+@app.route("/add_artist", methods=["POST"])
+def post_new_artist():
+    new_artist = Artist(
+        name=request.form.get("name"),
+        img_url=request.form.get("img_url"),
+        location=request.form.get("loc"),
+        artist_type=request.form.get("artist_type"),
+        payment_favorite=request.form.get("payment_favorite"),
+        wallet_id=request.form.get("wallet_id"),
+    )
+    db.session.add(new_artist)
+    db.session.commit()
+    return jsonify(response={"success": "Successfully added the new artist."})
 
-
+# Create a new merch item
+# Test this inside Postman. Request type: Post ->  Body ->  x-www-form-urlencoded
+@app.route("/add_merch", methods=["POST"])
+def post_new_merch():
+    new_merch = Merch(
+        name=request.form.get("name"),
+        img_url=request.form.get("img_url"),
+        merch_type=request.form.get("merch_type"),
+   
+    )
+    db.session.add(new_merch)
+    db.session.commit()
+    return jsonify(response={"success": "Successfully added the new merch."})
 
 
 if __name__ == '__main__':
