@@ -5,10 +5,17 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { ProfileComponent } from './profile/profile.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [AppComponent],
-  imports: [BrowserModule, AppRoutingModule, HomeComponent, ProfileComponent],
+  imports: [
+    BrowserModule,
+    NgbModule,
+    AppRoutingModule,
+    HomeComponent,
+    ProfileComponent,
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })
