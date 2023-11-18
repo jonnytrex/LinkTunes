@@ -8,6 +8,16 @@ const routes: Routes = [
       import('./profile/profile.component').then((mod) => mod.ProfileComponent),
   },
   {
+    path: 'signin',
+    loadComponent: () =>
+      import('./signin/signin.component').then((mod) => mod.SigninComponent),
+  },
+  {
+    path: 'market',
+    loadComponent: () =>
+      import('./market/market.component').then((mod) => mod.MarketComponent),
+  },
+  {
     path: '',
     loadComponent: () =>
       import('./home/home.component').then((mod) => mod.HomeComponent),

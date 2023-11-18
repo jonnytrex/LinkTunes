@@ -6,6 +6,8 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { ProfileComponent } from './profile/profile.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { MarketComponent } from './market/market.component';
+import { SigninComponent } from './signin/signin.component';
 
 @NgModule({
   declarations: [AppComponent],
@@ -15,6 +17,8 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     AppRoutingModule,
     HomeComponent,
     ProfileComponent,
+    MarketComponent,
+    SigninComponent,
   ],
   providers: [],
   bootstrap: [AppComponent],
