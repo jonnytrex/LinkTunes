@@ -16,3 +16,12 @@ global site header, contains links to main pages
 - home
 - my profile
 - marketplace
+
+marketplace
+-----------
+contains users buying and selling music and merchandise
+
+sign in / profile
+-----------------
+when user not signed-in => show sign in page with log in and sign up
+when user signed-in => show user profile page
