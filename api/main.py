@@ -1,3 +1,6 @@
+import sys
+sys.path.append('/home/noah/Desktop/proj/chainlink/LinkTunes')
+
 from scripts.helper_functions import get_account
 from flask import Flask, jsonify, render_template, request
 from flask_sqlalchemy import SQLAlchemy
