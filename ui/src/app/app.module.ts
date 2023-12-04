@@ -3,11 +3,11 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HomeComponent } from './home/home.component';
-import { ProfileComponent } from './profile/profile.component';
+import { HomeComponent } from './features/home/home.component';
+import { ProfileComponent } from './features/profile/profile.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import { MarketComponent } from './market/market.component';
-import { SigninComponent } from './signin/signin.component';
+import { MarketComponent } from './features/market/market.component';
+import { SigninComponent } from './features/signin/signin.component';
 
 @NgModule({
   declarations: [AppComponent],

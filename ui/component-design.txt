@@ -25,3 +25,5 @@ sign in / profile
 -----------------
 when user not signed-in => show sign in page with log in and sign up
 when user signed-in => show user profile page
+
+replace search bar with mp3 player

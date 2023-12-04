@@ -5,23 +5,29 @@ const routes: Routes = [
   {
     path: 'profile',
     loadComponent: () =>
-      import('./profile/profile.component').then((mod) => mod.ProfileComponent),
+      import('./features/profile/profile.component').then(
+        (mod) => mod.ProfileComponent
+      ),
   },
   {
     path: 'signin',
     loadComponent: () =>
-      import('./signin/signin.component').then((mod) => mod.SigninComponent),
+      import('./features/signin/signin.component').then(
+        (mod) => mod.SigninComponent
+      ),
   },
   {
     path: 'market',
     loadComponent: () =>
-      import('./market/market.component').then((mod) => mod.MarketComponent),
+      import('./features/market/market.component').then(
+        (mod) => mod.MarketComponent
+      ),
   },
   {
     path: '',
     pathMatch: 'full',
     loadComponent: () =>
-      import('./home/home.component').then((mod) => mod.HomeComponent),
+      import('./features/home/home.component').then((mod) => mod.HomeComponent),
   },
 ];
 
